@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nhóm 1 - DTDM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Fade-in animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.8s ease-in-out forwards;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-rose-50 via-sky-50 to-indigo-50 text-gray-800 font-sans"
+  >
+    <header
+      class="text-center py-10 bg-gradient-to-r from-sky-100 to-indigo-100 shadow-lg"
+    >
+      <h1 class="text-4xl font-bold mb-2 animate-bounce">
+        Nhóm 1 - Điện toán đám mây
+      </h1>
+      <p class="text-lg max-w-2xl mx-auto">
+        Chào mừng đến với website của nhóm 1. Đây là sản phẩm thực hành triển
+        khai web tĩnh trên nền tảng Vercel.
+      </p>
+    </header>
+
+    <!-- Thành viên -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-semibold mb-8 text-center">
+        👥 Thành viên nhóm
+      </h2>
+
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <!-- Card -->
+        <div
+          class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition transform fade-in-up"
+        >
+          <img
+            src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/474537257_1330274951307390_8475103013893231883_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHbzbrDtRcj6Bb4PDkrGuYsA14BCeoXiYMDXgEJ6heJgxaDt1ux9W_aHBQP97nWGfgFBX1Yy0heIshTSarnnn7E&_nc_ohc=JQmcRTsprgUQ7kNvwHXeY3Q&_nc_oc=Adkl5CyJlLwfscvbMewZ8SeQIxrqm_q543BDR19DjOxiFeHxiCElbOXr-PBXU5iWkDDOc0Y9tXCQV9nPpr5u3qBX&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=LSVu7i6FrJZXm7y6udbVYg&oh=00_AfbX1Xvr2xQUpQN0oyvN5izPXb5ciNlTUa5uMWptRi8Q-A&oe=68CB0102   "
+            alt="Vũ Ngọc Hải Hà"
+            class="w-28 h-28 rounded-full object-cover mx-auto mb-4 hover:rotate-6 transition-transform duration-300"
+          />
+          <h3 class="text-lg font-bold">Vũ Ngọc Hải Hà</h3>
+          <p class="text-sm text-slate-600">Ngày sinh: 01/01/2002</p>
+          <p class="text-sm text-indigo-600 font-medium">Thành viên</p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition transform fade-in-up"
+        >
+          <img
+            src="https://scontent.fhan20-1.fna.fbcdn.net/v/t1.6435-1/160782340_271258687897568_6237076410782101596_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeHEPDY3Nt8xfhINmL8L0vtwvsXKw79BwcC-xcrDv0HBwH0r19Y39Ocezsuln8L6pu_v8QnTizsytQYENjDRqJk_&_nc_ohc=vg3K800qu5IQ7kNvwHZwztM&_nc_oc=Adlp2VhCJ2xsytlMGYIGJkRwJRo5lZrkxPpaxrO8bURhRb0EGRRWm_6gU-otZRtEFIJ79k-OJ8mhAczhNdPMy6ts&_nc_zt=24&_nc_ht=scontent.fhan20-1.fna&_nc_gid=dEATtZY7KWgIlAc6BPINGw&oh=00_AfZQZ9BJ07JLE-aFX42xDJR--ghPX2dPMfh_4_7uhkIrAQ&oe=68EC96F4"
+            alt="Nguyễn Anh Đức"
+            class="w-28 h-28 rounded-full object-cover mx-auto mb-4 hover:-rotate-6 transition-transform duration-300"
+          />
+          <h3 class="text-lg font-bold">Nguyễn Anh Đức</h3>
+          <p class="text-sm text-slate-600">Ngày sinh: 05/02/2002</p>
+          <p class="text-sm text-indigo-600 font-medium">Thành viên</p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition transform fade-in-up"
+        >
+          <img
+            src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-1/474603454_577463595158154_3911701849101493129_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEP_k29xUfUEbzHXRgMnkhKvhZ0tcqasiG-FnS1ypqyIVbxNYzAw4n3pBFXsQImHXwntg2oN48wReduvD-klQV5&_nc_ohc=zQI9YiaAQfkQ7kNvwEHURa0&_nc_oc=AdkAtWtydn1PWbyQojqmQFhF8VM1mzm6PEYHSjD2trZJRu8lsrgb8Rd5SIykH8sPojavRqL9fRNMPkTphchg0Fym&_nc_zt=24&_nc_ht=scontent.fhan20-1.fna&_nc_gid=RuWioBFQIwFzETwjxjN3TA&oh=00_AfZqfc1Mj4KvPxwHcZ4ozSQl57JgTWC8O_F0jZJeeAluMg&oe=68CB0217"
+            alt="Lê Thanh Bình"
+            class="w-28 h-28 rounded-full object-cover mx-auto mb-4 hover:scale-110 transition-transform duration-300"
+          />
+          <h3 class="text-lg font-bold">Lê Thanh Bình</h3>
+          <p class="text-sm text-slate-600">Ngày sinh: 10/03/2002</p>
+          <p class="text-sm text-indigo-600 font-medium">Thành viên</p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition transform fade-in-up"
+        >
+          <img
+            src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-1/513039922_2854583328262675_2609423491380637814_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFJHc2jtWYdE75nYRxj0KwyBPy9XcjVOo8E_L1dyNU6j6zn7I9jJi0uBB29BW35MYoe9d1pUpqeLZlfqO7aaf3j&_nc_ohc=kc3n0XpeZnwQ7kNvwFB-NGd&_nc_oc=Adltdnl_RvufOoHfHH9JzI2tJ7Srse69cUQJxjq2SDIujSCeEkcDEous29xFrvyk5O3_iysQ_BikZgqNtUgWn3yI&_nc_zt=24&_nc_ht=scontent.fhan20-1.fna&_nc_gid=BniqZLBr_O--NrJpSNvLqA&oh=00_AfaTHO877RGXrolRIddmyy7HY2OMph7hf7gcLxazh6it6Q&oe=68CAEFBA"
+            alt="Đỗ Như Khánh"
+            class="w-28 h-28 rounded-full object-cover mx-auto mb-4 hover:rotate-3 transition-transform duration-300"
+          />
+          <h3 class="text-lg font-bold">Đỗ Như Khánh</h3>
+          <p class="text-sm text-slate-600">Ngày sinh: 15/04/2002</p>
+          <p class="text-sm text-indigo-600 font-medium">Thành viên</p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition transform fade-in-up"
+        >
+          <img
+            src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/506358593_653847877689450_6092793556944846698_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFAQ-YD8a8uktyDA_tBrJxhj006GyGm6DOPTTobIaboMw-N_wQxl6RJGWvUbena7cP4WeGxHbshqrt5qU-doJZz&_nc_ohc=k_GczCjW-24Q7kNvwE1ezGJ&_nc_oc=AdkkcyU8z-N7MKpEogvh48ljiy49GlNzWgeXI6WvJ2IOvJ2il7Oe75R3XNayWwKHFkny78yyxBqY37tRoy-3g_ZN&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&_nc_gid=TvkVDmFj9JMgvGNNv8uwoQ&oh=00_AfZMT2hRRMON_CTF0eRMADATnG5gCtYEHfuTkqxoIT_Ngw&oe=68CAEACE"
+            alt="Dương Hải Đăng"
+            class="w-28 h-28 rounded-full object-cover mx-auto mb-4 hover:-rotate-3 transition-transform duration-300"
+          />
+          <h3 class="text-lg font-bold">Dương Hải Đăng</h3>
+          <p class="text-sm text-slate-600">Ngày sinh: 20/05/2002</p>
+          <p class="text-sm text-indigo-600 font-medium">Thành viên</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Triển khai App Engine -->
+    <section
+      class="bg-white max-w-4xl mx-auto rounded-2xl shadow-md p-8 mb-12 fade-in-up"
+    >
+      <h2 class="text-2xl font-semibold mb-4">
+        🚀 Triển khai deploy bằng Vercel
+      </h2>
+      <p class="mb-4">
+        Website này được triển khai trên Vercel theo các bước sau:
+      </p>
+      <ul class="list-disc list-inside space-y-1 text-slate-700">
+        <li>Khởi động Cloud Shell và tạo project.</li>
+        <li>Tạo App Engine với vùng <code>asia-southeast1</code>.</li>
+        <li>Tạo file HTML và file cấu hình <code>app.yaml</code>.</li>
+        <li>Chạy lệnh <code>gcloud app deploy</code> để triển khai.</li>
+        <li>Truy cập website bằng lệnh <code>gcloud app browse</code>.</li>
+      </ul>
+      <p class="mt-4 text-slate-600">
+        Đây là ví dụ điển hình về mô hình PaaS, giúp triển khai ứng dụng mà
+        không cần quản lý hạ tầng.
+      </p>
+    </section>
+
+    <footer class="text-center py-6 text-slate-500 text-sm">
+      &copy; 2025 Nhóm 1 - DTDM. Website thực hành môn học Điện toán đám mây.
+    </footer>
+  </body>
+</html>
